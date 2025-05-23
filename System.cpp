@@ -7,7 +7,7 @@ System::System() {
 string System::getInfo() const {
     string info = "Payment by Cash:\n";
     for (const Cash& cash : paymentsCash) {
-        info += cash.getInfo("") + "\n";  // Asumiendo que getInfo recibe string
+        info += cash.getInfo() + "\n";  
     }
 
     info += "Payments by Card:\n";
