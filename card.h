@@ -1,19 +1,18 @@
-#ifndef CARD_H
-#define CARD_H
+#ifndef CASH_H
+#define CASH_H
 #include <string>
+#include "Payment.h"
 using namespace std;
 
-class Card{
+class Cash: public Payment{
     private: 
-        string bank; 
-        string cardNumber; 
+        float change; 
+
     public: 
-        Card();
-        Card(float, string, float, string, string);
-        string getInfo(); 
+        Cash();
+        Cash(float, string, float);
+        string getInfo() const; 
         
-
 };
-
 
 #endif
