@@ -1,4 +1,5 @@
 #include "cash.h"
+using namespace std; 
 
 Cash::Cash(){
 
@@ -18,7 +19,7 @@ Cash::Cash(float amount_, string date_, float productPrice_){
 
 }
 
-string Cash::getInfo(){
+string Cash::getInfo() const{
 
-    return getInfo()+ "Cash payment of "+ amount + "Change: "+ change;
+    return Payment::getInfo()+ " Cash payment of "+ to_string(amount) + " Change: "+ to_string(change);
 }
