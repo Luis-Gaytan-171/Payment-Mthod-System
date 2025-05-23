@@ -9,7 +9,7 @@ class Cash{
 
     public: 
         Cash();
-        Cash(float, string, float, float)
+        Cash(float, string, float)
         string getInfo(); 
         
 };
